@@ -1,0 +1,19 @@
+{
+    "dataenv": [
+        {
+            "name": "TOKEN",
+            "description": "Your bot token",
+            "defaultValue": "ciao"
+        },
+        {
+            "name": "TOKEN2",
+            "description": "Your bot token",
+            "defaultValue": ""
+        },
+        {
+            "name": "TOKEN3",
+            "description": "Your bot token",
+            "defaultValue": ""
+        }
+    ]
+}

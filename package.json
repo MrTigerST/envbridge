@@ -1,0 +1,20 @@
+{
+  "name": "envbuilder",
+  "version": "1.0.0",
+  "description": "Share .env file without private info with JSON.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "bin": {
+    "envbuilder": "binary/cli.js"
+  },
+  "keywords": [],
+  "author": "MrTigerST (with support of Dipo)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "commander": "^12.1.0",
+    "typescript": "^5.7.2"
+  }
+}
