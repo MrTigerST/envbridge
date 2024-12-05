@@ -3,6 +3,13 @@ const fs = require("fs");
 
 export function envToJson(): void {
     const envContent = fs.readFileSync(path.join(process.cwd(), '.env'), "utf8");
+    const jsonPath = path.join(process.cwd(), "envinfo.json");
+
+    if (!fs.existsSync(envContent)) {
+        console.error("The .env file does not exist.");
+        return;
+    }
+
     const jsonResult: Record<string, any> = { dataenv: [] };
 
     const lines = envContent.split(/\r?\n/);
@@ -29,5 +36,5 @@ export function envToJson(): void {
         }
     }
 
-    fs.writeFileSync(path.join(process.cwd(), 'envinfo.json'), JSON.stringify(jsonResult, null, 4), "utf8");
+    fs.writeFileSync(jsonPath, JSON.stringify(jsonResult, null, 4), "utf8");
 }

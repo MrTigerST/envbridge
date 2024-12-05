@@ -3,6 +3,7 @@
 const { program } = require('commander');
 const { BuildInfo } = require('../build');
 const { envToJson } = require('../create');
+const { verifyEnvIntegrity } = require('../integrity');
 
 program
     .command('build')
@@ -21,7 +22,10 @@ program
 
 program
     .command('integrity')
-    .description('Check if the .env file is intact');
+    .description('Check if the .env file is intact')
+    .action(() => {
+        verifyEnvIntegrity();
+    });
 
 
 program.parse(process.argv);
