@@ -9,6 +9,10 @@
   "bin": {
     "envbuilder": "binary/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrTigerST/envbuilder"
+  },
   "keywords": [],
   "author": "MrTigerST (with support of Dipo)",
   "license": "ISC",
