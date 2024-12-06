@@ -1,5 +1,5 @@
 {
-  "name": "envbuilder",
+  "name": "envbridge",
   "version": "1.0.0",
   "description": "Share .env file without private info with JSON.",
   "main": "dist/index.js",
@@ -7,11 +7,11 @@
     "build": "tsc"
   },
   "bin": {
-    "envbuilder": "binary/cli.js"
+    "envbridge": "binary/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrTigerST/envbuilder"
+    "url": "https://github.com/MrTigerST/envbridge"
   },
   "keywords": [],
   "author": "MrTigerST (with support of Dipo)",
