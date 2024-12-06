@@ -2,13 +2,15 @@ const path = require("path");
 const fs = require("fs");
 
 export function BuildInfo() {
-    const info = require(path.join(process.cwd(), "envinfo.json"));
-    const envPath = path.join(process.cwd(), ".env");
 
     if (!fs.existsSync(path.join(process.cwd(), "envinfo.json"))) {
         console.error("The envinfo.json file does not exist.");
         return false;
     }
+    
+    const info = require(path.join(process.cwd(), "envinfo.json"));
+    const envPath = path.join(process.cwd(), ".env");
+
 
 
     const existingEnvKeys: Set<string> = new Set();
