@@ -36,13 +36,12 @@ export function verifyEnvIntegrity() {
         const defaultValue = attribute.defaultValue;
 
         if (!(name in envVariables)) {
-            console.error(`Variabile mancante: ${name}`);
+            console.error(`Missing variable: ${name}`);
             allValid = false;
             continue;
         }
 
         if (defaultValue !== undefined && envVariables[name] === "") {
-            console.error(`Variabile senza valore: ${name} (defaultValue: ${defaultValue})`);
             allValid = false;
         }
     }
