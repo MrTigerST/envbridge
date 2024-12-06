@@ -58,7 +58,7 @@ Suppose you want to share a template of your `.env`, but without sharing the val
 After running the command to build it, you would have a .env like this:
 ```env
 # Your bot token
-TOKEN=ciao
+TOKEN=hello
 
 # Your bot token
 TOKEN2=
