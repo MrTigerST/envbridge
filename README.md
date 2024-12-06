@@ -1,6 +1,6 @@
 # envbridge
 
-**envbridge** is a tool to securely and automatically generate `.env` files from an `envbridge.json` file, allowing you to share the .env by keeping certain information private to you only, and making other information public, at your discretion. With integrity verification, it ensures the accuracy and safety of your environment variables by preventing unauthorized modifications.
+**envbridge** is a tool to securely and automatically generate `.env` files from an `envbridge.json` file, allowing you to share the .env by keeping certain information private to you only, and making other information public, at your discretion. With integrity verification, it ensures the accuracy and safety of your environment variables by preventing errors.
 
 ## Use
 
@@ -9,17 +9,17 @@ To use the tools, use the following commands:
 
 ### To build a `.env` from a `envbridge.json`
 ```bash
-  npx envbridge build
+npx envbridge build
 ```
 
 ### To build a `envbridge.json` from a `.env`
 ```bash
-  npx envbridge create
+npx envbridge create
 ```
 
 ### To check the integrity of the `.env` file against the data in `envfile.json`
 ```bash
-  npx envbridge integrity
+npx envbridge integrity
 ```
 ## Structure of `envbridge.json`
 
