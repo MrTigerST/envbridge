@@ -5,7 +5,7 @@ export function BuildInfo() {
     const info = require(path.join(process.cwd(), "envinfo.json"));
     const envPath = path.join(process.cwd(), ".env");
 
-    if (!fs.existsSync(info)) {
+    if (!fs.existsSync(path.join(process.cwd(), "envinfo.json"))) {
         console.error("The envinfo.json file does not exist.");
         return false;
     }

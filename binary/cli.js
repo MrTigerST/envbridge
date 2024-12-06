@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 const { program } = require('commander');
-const { BuildInfo } = require('../build');
-const { envToJson } = require('../create');
-const { verifyEnvIntegrity } = require('../integrity');
+const { BuildInfo } = require('../dist/build');
+const { envToJson } = require('../dist/create');
+const { verifyEnvIntegrity } = require('../dist/integrity');
 
 program
     .command('build')

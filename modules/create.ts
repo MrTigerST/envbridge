@@ -5,7 +5,7 @@ export function envToJson(): void {
     const envContent = fs.readFileSync(path.join(process.cwd(), '.env'), "utf8");
     const jsonPath = path.join(process.cwd(), "envinfo.json");
 
-    if (!fs.existsSync(envContent)) {
+    if (!fs.existsSync(path.join(process.cwd(), '.env'))) {
         console.error("The .env file does not exist.");
         return;
     }
