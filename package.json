@@ -1,6 +1,6 @@
 {
   "name": "envbridge",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Share .env file without private info with JSON.",
   "main": "dist/index.js",
   "scripts": {
