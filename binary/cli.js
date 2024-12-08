@@ -24,7 +24,9 @@ program
     .command('integrity')
     .description('Check if the .env file is intact')
     .action(() => {
-        verifyEnvIntegrity();
+        if (verifyEnvIntegrity()) {
+            console.log("The .env file is intact when compared to the envinfo.json template.");
+        }
     });
 
 
