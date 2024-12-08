@@ -1,6 +1,6 @@
 {
   "name": "envbridge",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Share .env file without private info with JSON.",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/MrTigerST/envbridge"
   },
-  "keywords": [],
+  "keywords": ["env", "envbridge", "env-bridge", "json to env"],
   "author": "MrTigerST (with support of Dipo)",
   "license": "ISC",
   "devDependencies": {
