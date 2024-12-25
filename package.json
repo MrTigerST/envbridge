@@ -19,7 +19,7 @@
     "env-bridge",
     "json to env"
   ],
-  "author": "MrTigerST (with support of Dipo)",
+  "author": "MrTigerST",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.10.1",

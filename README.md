@@ -21,6 +21,14 @@ npx envbridge create
 ```bash
 npx envbridge integrity
 ```
+
+### To create a Template of `envinfo.json`
+```bash
+npx envbridge template
+```
+
+
+
 ## Structure of `envinfo.json`
 
 The `envinfo.json` file contains the following information to generate an `.env` file:
