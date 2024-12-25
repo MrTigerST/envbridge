@@ -10,27 +10,26 @@ export function createTemplate() {
 
     function templateCreationLogic() {
         const templateContent = `{
-            "dataenv": [
-                {
-                    "name": "TOKEN",
-                    "description": "Your token 1",
-                    "defaultValue": "hello"
-                },
-                {
-                    "name": "TOKEN2",
-                    "description": "Your token 2",
-                    "defaultValue": ""
-                },
-                {
-                    "name": "TOKEN3",
-                    "description": "Your token 3",
-                    "defaultValue": ""
-                }
-            ]
-        }`;
+  "dataenv": [
+    {
+      "name": "TOKEN",
+      "description": "Your token 1",
+      "defaultValue": "hello"
+    },
+    {
+      "name": "TOKEN2",
+      "description": "Your token 2",
+      "defaultValue": ""
+    },
+    {
+      "name": "TOKEN3",
+      "description": "Your token 3",
+      "defaultValue": ""
+    }
+  ]
+}`;
 
         fs.writeFileSync(envInfoPath, templateContent);
-        console.log("Template envinfo.json file has been created.");
     }
 
 
