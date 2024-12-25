@@ -7,7 +7,7 @@
     "build": "tsc"
   },
   "bin": {
-    "envbridge": "binary/cli.js"
+    "envbridge": "binary/envbridge.js"
   },
   "repository": {
     "type": "git",
