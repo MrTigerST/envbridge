@@ -16,6 +16,7 @@ npx envbridge build
 ```bash
 npx envbridge create
 ```
+> **NOTE:** If you want only the new attributes you created to be added, without including the changes you made to existing attributes, use the `-p` or `--preserve` flag (`npx envbridge create -p`).
 
 ### To check the integrity of the `.env` file against the data in `envinfo.json`
 ```bash

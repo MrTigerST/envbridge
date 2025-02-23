@@ -17,8 +17,9 @@ program
 program
     .command('create')
     .description('Create a envinfo.json file from your .env file (edit the envinfo.json on defaultValue attribute to remove private information ).')
-    .action(() => {
-        envToJson();
+    .option('-p, --preserve', 'Preserve existing attributes and only add new ones.')
+    .action((options) => {
+        envToJson(options.preserve || false);
     });
 
 program
